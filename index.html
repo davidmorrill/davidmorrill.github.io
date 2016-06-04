@@ -1,7 +1,66 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 800px;
+  height: 1750px;
+}
+.container {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 10px 10px 0 0;
+}
+.bottom {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.top:hover {
+  opacity: 1;
+}
+</style>
+  </head>
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<div class="section">
+<div class="container">
+  <img class="bottom" src="images/histogram.png">
+  <img class="top" src="images/histogram_o.png">
+</div>
+<div class="container">
+  <img class="bottom" src="images/stat_pick.png">
+  <img class="top" src="images/stat_pick_o.png">
+</div>
+<div class="container">
+  <img class="bottom" src="images/team_pick.png">
+  <img class="top" src="images/team_pick_o.png">
+</div>
+<div class="container">
+  <img class="bottom" src="images/league_pick.png">
+  <img class="top" src="images/league_pick_o.png">
+</div>
+<div class="container">
+  <img class="bottom" src="images/team_favorites.png">
+  <img class="top" src="images/team_favorites_o.png">
+</div>
+<div class="container">
+  <img class="bottom" src="images/help.png">
+  <img class="top" src="images/help_o.png">
+</div>
+</div>
+<p>More</p>
 </body>
 </html>
